@@ -1,0 +1,78 @@
+mysql> CREATE DATABASE Atharva;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> USE Atharva;
+Database changed
+mysql> SELECT DATABASE();
++------------+
+| DATABASE() |
++------------+
+| Atharva    |
++------------+
+1 row in set (0.00 sec)
+
+mysql> CREATE TABLE Employee (
+    ->     emp_no INT PRIMARY KEY,
+    ->     emp_name VARCHAR(20),
+    ->     date DATE,
+    ->     position VARCHAR(20),
+    ->     salary INT
+    -> );
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> CREATE TABLE TE (
+    ->     emp_no INT PRIMARY KEY,
+    ->     emp_name VARCHAR(20),
+    ->     join_date DATE,
+    ->     position VARCHAR(20),
+    ->     salary INT
+    -> );
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> INSERT INTO Employee (emp_no, emp_name, date, position, salary) 
+    -> VALUES (1, 'abc', '2018-07-11', 'clerk', 50000);
+Query OK, 1 row affected (0.02 sec)
+
+mysql> 
+mysql> INSERT INTO Employee (emp_no, emp_name, date, position, salary) 
+    -> VALUES (2, 'Atharva', '2018-05-11', 'ceo', 150000);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> 
+mysql> INSERT INTO Employee (emp_no, emp_name, date, position, salary) 
+    -> VALUES (3, 'xyz', '2018-05-21', 'hr', 100000);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> 
+mysql> INSERT INTO Employee (emp_no, emp_name, date, position, salary) 
+    -> VALUES (4, 'aqwgy', '2018-06-21', 'te', 10000);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> 
+mysql> INSERT INTO Employee (emp_no, emp_name, date, position, salary) 
+    -> VALUES (5, 'sfhjfh', '2018-07-21', 'gt', 12000);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO TE (emp_no, emp_name, join_date, position, salary) 
+    -> VALUES (1, 'abc', '2018-07-11', 'clerk', 50000);
+Query OK, 1 row affected (0.02 sec)
+
+mysql> 
+mysql> INSERT INTO TE (emp_no, emp_name, join_date, position, salary) 
+    -> VALUES (2, 'Atharva', '2018-05-11', 'ceo', 150000);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> 
+mysql> INSERT INTO TE (emp_no, emp_name, join_date, position, salary) 
+    -> VALUES (3, 'xyz', '2018-05-21', 'hr', 100000);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> 
+mysql> INSERT INTO TE (emp_no, emp_name, join_date, position, salary) 
+    -> VALUES (4, 'aqwgy', '2018-06-21', 'te', 10000);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> 
+mysql> INSERT INTO TE (emp_no, emp_name, join_date, position, salary) 
+    -> VALUES (5, 'sfhjfh', '2018-07-21', 'gt', 12000);
+Query OK, 1 row affected (0.01 sec)
